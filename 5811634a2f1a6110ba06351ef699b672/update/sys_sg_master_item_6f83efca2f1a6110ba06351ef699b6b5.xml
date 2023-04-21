@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_995046_memo_memo</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="memo Form Screen">df83efca2f1a6110ba06351ef699b6b2</embedded_screen>
+        <item_view/>
+        <name>memo master_item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-21 06:08:41</sys_created_on>
+        <sys_id>6f83efca2f1a6110ba06351ef699b6b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>memo master_item</sys_name>
+        <sys_package display_value="memo" source="x_995046_memo">5811634a2f1a6110ba06351ef699b672</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="memo">5811634a2f1a6110ba06351ef699b672</sys_scope>
+        <sys_update_name>sys_sg_master_item_6f83efca2f1a6110ba06351ef699b6b5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 06:08:41</sys_updated_on>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="memo List Screen View Config">0f8327ca2f1a6110ba06351ef699b60e</view_config>
+    </sys_sg_master_item>
+</record_update>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_parameter">
+    <sys_sg_ui_parameter action="INSERT_OR_UPDATE">
+        <button display_value="Edit Button (memo)">e783efca2f1a6110ba06351ef699b6c6</button>
+        <button_parent_table>x_995046_memo_memo</button_parent_table>
+        <carried>false</carried>
+        <constant/>
+        <default_value/>
+        <default_value_type>source_field</default_value_type>
+        <field_name>url</field_name>
+        <input_source>user</input_source>
+        <input_style>inline</input_style>
+        <input_type>text</input_type>
+        <mandatory>false</mandatory>
+        <max_entries/>
+        <multi_entry>false</multi_entry>
+        <multi_select>false</multi_select>
+        <name>Url</name>
+        <order/>
+        <parameter_type>button</parameter_type>
+        <placeholder/>
+        <screen/>
+        <search_type>starts_with</search_type>
+        <source_field>url</source_field>
+        <sys_class_name>sys_sg_ui_parameter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-21 06:08:42</sys_created_on>
+        <sys_id>2383efca2f1a6110ba06351ef699b6c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Url</sys_name>
+        <sys_package display_value="memo" source="x_995046_memo">5811634a2f1a6110ba06351ef699b672</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="memo">5811634a2f1a6110ba06351ef699b672</sys_scope>
+        <sys_update_name>sys_sg_ui_parameter_2383efca2f1a6110ba06351ef699b6c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 06:08:42</sys_updated_on>
+        <table_name>x_995046_memo_memo</table_name>
+        <virtual_field_value>false</virtual_field_value>
+    </sys_sg_ui_parameter>
+    <sys_translated_text action="delete_multiple" query="documentkey=2383efca2f1a6110ba06351ef699b6c8"/>
+</record_update>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="67c2e3ca2f1a6110ba06351ef699b63a" label="memo" max_length="40" name="x_995046_memo_memo" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Answer" mandatory="true" max_length="500" name="answer" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" mandatory="true" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Question" mandatory="true" max_length="40" name="question" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Tag" max_length="40" name="tag" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Url" max_length="1024" name="url" type="url"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

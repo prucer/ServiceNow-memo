@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_m2m_section">
+    <sys_sg_applet_launcher_m2m_section action="INSERT_OR_UPDATE">
+        <applet_launcher display_value="memo">4b8327ca2f1a6110ba06351ef699b60b</applet_launcher>
+        <order/>
+        <section display_value="memo">6383efca2f1a6110ba06351ef699b6ca</section>
+        <sys_class_name>sys_sg_applet_launcher_m2m_section</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-21 06:08:42</sys_created_on>
+        <sys_id>ab83efca2f1a6110ba06351ef699b6cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="memo" source="x_995046_memo">5811634a2f1a6110ba06351ef699b672</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="memo">5811634a2f1a6110ba06351ef699b672</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_m2m_section_ab83efca2f1a6110ba06351ef699b6cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 06:08:42</sys_updated_on>
+    </sys_sg_applet_launcher_m2m_section>
+</record_update>

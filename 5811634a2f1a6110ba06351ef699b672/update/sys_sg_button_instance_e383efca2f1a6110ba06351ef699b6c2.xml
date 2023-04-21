@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="New Button (memo)">2383efca2f1a6110ba06351ef699b6be</button>
+        <color_theme/>
+        <description/>
+        <disable_offline>false</disable_offline>
+        <field_name/>
+        <icon/>
+        <label>New</label>
+        <location>top</location>
+        <name>New (memo)</name>
+        <order/>
+        <parent>5383efca2f1a6110ba06351ef699b6b2</parent>
+        <parent_table>sys_sg_screen</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-21 06:08:42</sys_created_on>
+        <sys_id>e383efca2f1a6110ba06351ef699b6c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New (memo)</sys_name>
+        <sys_package display_value="memo" source="x_995046_memo">5811634a2f1a6110ba06351ef699b672</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="memo">5811634a2f1a6110ba06351ef699b672</sys_scope>
+        <sys_update_name>sys_sg_button_instance_e383efca2f1a6110ba06351ef699b6c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 06:08:42</sys_updated_on>
+        <table/>
+    </sys_sg_button_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=e383efca2f1a6110ba06351ef699b6c2"/>
+</record_update>
