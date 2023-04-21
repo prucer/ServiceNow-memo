@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, $location, spUtil, $http) {
+  /* widget controller */
+  var c = this;
+	
+	c.memolist=[];
+	
+	
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>table{
+  border: 1px solid;
+  margin: auto;
+  width: 500px;
+}
+td,th{
+  text-align: center;
+  border: 1px solid;
+}
+div{
+  text-align: center;
+  
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>show_memo_list</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>show_memo_list</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	var gr= new GlideRecode("x_995046_memo_memo");
+console.log(gr);
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-21 07:25:19</sys_created_on>
+        <sys_id>4215374e2f5a6110ba06351ef699b666</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>show_memo_list</sys_name>
+        <sys_package display_value="memo" source="x_995046_memo">5811634a2f1a6110ba06351ef699b672</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="memo">5811634a2f1a6110ba06351ef699b672</sys_scope>
+        <sys_update_name>sp_widget_4215374e2f5a6110ba06351ef699b666</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-21 09:15:55</sys_updated_on>
+        <template><![CDATA[<!-- 创建一个div块标签，在该块标签中添加四个输入信息（问题、解决方法、问题标签、请输入参考URL）的框框、一个确认添加的按钮（添加）-->
+<div>
+  <input type="text" id="question" placeholder="请输入问题">
+  <input type="text" id="answer"  placeholder="请输入解决方法">
+  <input type="text" id="tag"  placeholder="请输入问题标签">
+  <input type="text" id="url"  placeholder="请输入参考URL">
+  <input type="button" value="添加" id="btn_add">
+</div>
+
+<table>
+  <!-- 表格标题 -->
+  <caption>学生信息表</caption>
+  <!-- 表格第一行：表格表头 -->
+  <tr>
+    <th>问题</th>
+    <th>解决方法</th>
+    <th>问题标签</th>
+    <th>参考URL</th>
+    <th>操作</th>
+  </tr>
+
+  <!-- 表格第二行：学生信息2 -->
+  <tr ng-repeat = memo in c.memolist>
+    <td id = "question{{$index}}" ng-modal = "memo.question"></td>
+    <td id = "answer{{$index}" ng-modal = "memo.answer"></td>
+    <td id = "tag{{$index}}" ng-modal = "memo.tag"></td>
+    <td id = "url{{$index}}" ng-modal = "memo.url"></td>
+    <!-- 在该单元格中创建一个链接标签，void运算符来阻止href返回值，通过onclick事件(鼠标点击)属性来删除信息行-->
+    <td><a href="javascript:void(0);" onclick="deleteTr(this);">删除</a></td>
+  </tr>
+</table>]]></template>
+    </sp_widget>
+</record_update>
