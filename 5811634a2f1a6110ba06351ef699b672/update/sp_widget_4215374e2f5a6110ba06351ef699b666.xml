@@ -5,8 +5,8 @@
   /* widget controller */
   var c = this;
 	
-	c.memolist=[];
-	
+	c.memolist = [];
+	c.memolist = c.data.memolist;
 	
 };]]></client_script>
         <controller_as>c</controller_as>
@@ -34,27 +34,37 @@ div{
         <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
         <name>show_memo_list</name>
         <option_schema/>
-        <public>false</public>
+        <public>true</public>
         <roles/>
         <script><![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-	var gr= new GlideRecode("x_995046_memo_memo");
-console.log(gr);
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	data.memolist = [];
+	var memoGR= new GlideRecord("x_995046_memo_memo");
+	memoGR.orderByDesc('number');
+	memoGR.query();
+	console.log(memoGR.hasNext());
+
+	while (memoGR.next()){
+		var memoObj = {};
+		$sp.getDisplayValue(memoObj,memoGR,'number,question,answer,tag,url');
+		data.memolist.push(memoObj);
+		console.log(memoGR);
+	}
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-21 07:25:19</sys_created_on>
         <sys_id>4215374e2f5a6110ba06351ef699b666</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>show_memo_list</sys_name>
         <sys_package display_value="memo" source="x_995046_memo">5811634a2f1a6110ba06351ef699b672</sys_package>
         <sys_policy/>
         <sys_scope display_value="memo">5811634a2f1a6110ba06351ef699b672</sys_scope>
         <sys_update_name>sp_widget_4215374e2f5a6110ba06351ef699b666</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-21 09:15:55</sys_updated_on>
+        <sys_updated_on>2023-04-24 02:01:26</sys_updated_on>
         <template><![CDATA[<!-- 创建一个div块标签，在该块标签中添加四个输入信息（问题、解决方法、问题标签、请输入参考URL）的框框、一个确认添加的按钮（添加）-->
 <div>
   <input type="text" id="question" placeholder="请输入问题">
@@ -66,7 +76,7 @@ console.log(gr);
 
 <table>
   <!-- 表格标题 -->
-  <caption>学生信息表</caption>
+  <caption>メモ帳一覧</caption>
   <!-- 表格第一行：表格表头 -->
   <tr>
     <th>问题</th>
@@ -76,9 +86,9 @@ console.log(gr);
     <th>操作</th>
   </tr>
 
-  <!-- 表格第二行：学生信息2 -->
+  <!-- 表格第二行：Repeatメモ信息 -->
   <tr ng-repeat = memo in c.memolist>
-    <td id = "question{{$index}}" ng-modal = "memo.question"></td>
+    <td id = "question{{$index}}" ng-modal = "memo.question">{memolist.question}</td>
     <td id = "answer{{$index}" ng-modal = "memo.answer"></td>
     <td id = "tag{{$index}}" ng-modal = "memo.tag"></td>
     <td id = "url{{$index}}" ng-modal = "memo.url"></td>
